@@ -1,0 +1,31 @@
+:bgintro:I feel my eyes slowly open.
+::I wake up in my shack, as usual. I often forget that I am a farmer.
+::I stare at my ceiling for what feels like an eternity, but in reality it was probably just a couple minutes.
+::I managed to push myself out of bed. I walk to my fridge, grab a hard-boiled egg for breakfast, and head outside.
+:houseintro:But as soon as I stepped outside, I noticed something strange instantly. It was severely dark out.
+::I check my watch and see that it reads as 11:00AM. It’s never usually this dark out so I am naturally thrown off guard.
+::I try to not think about it too much, maybe my clock is off or something.
+:shedintro:I walk over to my shed, which isn’t that far of a walk. I grab my axe and a flashlight for the occasion.
+::I walk over to the fence gate to the corn field. But I notice something.
+:vinesintro:The fence is covered in vines.
+::I stand there puzzled. How long have I been sleeping for vines to start growing all over the place?
+::I shrug it off and take my axe and with three swings, chop down the vines and manage to push the gate open.
+::I leave my home and head out to the corn field. It’s bigger than I remember.
+:mazeintro:I walk down the path, collecting some corn and putting it into a bag I keep on me.
+::About thirty minutes go by and I’ve gathered a good amount of corn.
+::I turn around to start heading home, and instantly feel a shiver down my spine. I think I’m lost.
+::I begin to hear a rustling in the corn behind me. Instinctively, I pull out my axe to be ready.
+::''Who’s there?!'' I say.
+::No response. I stand there for what feels like 30 minutes and nothing happens.
+::All of a sudden I turn back around and see him.
+::''What a foolish boy! Walking in my corn maze and taking MY CORN?'' -unknown
+::I’m shocked.
+::I stand there at a loss for words as I stare directly into the eyes of a living and TALKING scarecrow.
+:blackintro:I feel something on the back of my head. It feels cold, and as soon as I do feel it, everything goes black.
+::I wake up confused. I look around and see that I am still in the corn maze.
+:zardyintro:I notice the scarecrow from earlier right above me, though I am too dazed to react to it.
+::''About time!'' -unknown
+::''It looks like the fun is going to start soon!'' -unknown
+::''Now, now. He must be very confused, let us gather around and let him get used to his surroundings.'' -unknown
+::I look around in awe.
+:end:

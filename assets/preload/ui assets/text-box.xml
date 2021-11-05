@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="text-box.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="text-box-cable0000" x="3" y="283" width="1109" height="276"/>
+	<SubTexture name="text-box-idle0000" x="3" y="1120" width="1109" height="214"/>
+	<SubTexture name="text-box-jacky0000" x="3" y="3" width="1109" height="277"/>
+	<SubTexture name="text-box-unknow0000" x="3" y="562" width="1109" height="276"/>
+	<SubTexture name="text-box-zardy0000" x="3" y="841" width="1109" height="276"/>
+</TextureAtlas>

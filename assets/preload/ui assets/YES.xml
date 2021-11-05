@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="YES.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="YES0000" x="127" y="3" width="110" height="68"/>
+	<SubTexture name="selected YES0000" x="3" y="3" width="121" height="75"/>
+</TextureAtlas>

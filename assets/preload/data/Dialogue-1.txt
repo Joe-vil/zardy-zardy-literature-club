@@ -1,0 +1,35 @@
+:player:This field. . . is full of incredibly cute scarecrows?!
+::I look at all of them with astonishment.
+:unknown:Hey, you're funny looking!
+::Yeah, what are you? <3
+::You're quite the odd scarecrow!
+:zardy:Hey guys, this is quite rude of us to not introduce ourselves first, im Zardy!
+:jacky:Hellooo im Pumpkin Jack, but i also go by Jacky!
+:cable:My name is Cable Crow. What's your name, funny looking scarecrow?
+:player:M-me??
+::I'm still shocked… This is all happening so fast. I build up the courage to speak out.
+::M-my name is Marton, Marton Torres.
+:cable:Woah! What a bizarre name!
+:jacky:Quite cool if you ask me!
+:zardy:Okay guys, let's give Marton some space here, we don't want to freak our new guest out too much.
+:player:I get up, still wondering if this is all real or if I hit my head on a rock when I passed out earlier…
+::Maybe this is all a dream?
+::All I know is that these scarecrows are smokin hot~!
+:cable:Are you okay?
+:player:W-what?
+:jackyleave:I realized that I've been staring directly at Cable Crow completely zoned out.
+:cable:Why are you staring at me like that? Is there something wrong?
+:player:No no! I was just admiring your beauty!
+::''Thats such a stupid response!'' you think to yourself.
+::I look Cable Crow up and down, he's pretty cute. His soulless yet fulfilling eyes just bring me so much joy.
+:cable:I don't think anyone has ever complimented me before...
+::Hehe thanks!
+:jacky:''Hey Marton!'' I hear from a distance.
+:jackyreturn:Marton! Marton!
+:player:Jacky came running down the maze out of breath
+:zardy:Jacky? Where did you go? You were just right next to me.
+:jacky:No time to explain, come on Marton lets go!
+:player:''Wait, what's happening?'' I asked worryingly
+:jacky:Oh come on! Stop being a scaredy cat!
+:player:''Wait, hold on!'' You say.
+::Go with Jacky or stay with Cable Crow?
