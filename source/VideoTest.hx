@@ -45,7 +45,7 @@ class VideoTest extends FlxSpriteGroup
 	{
 		super();
 
-		box = new FlxSprite(101, 479);
+		box = new FlxSprite(222, 767);
 
 		var hasDialog = true;
 
@@ -55,45 +55,49 @@ class VideoTest extends FlxSpriteGroup
 			return;
 
 		box.frames = Paths.getSparrowUi('text-box');
-		box.animation.addByPrefix('idle', 'text-box-idle', 24, false);
-		box.animation.addByPrefix('cable', 'text-box-cable', 24, false);
-		box.animation.addByPrefix('jacky', 'text-box-jacky', 24, false);
-		box.animation.addByPrefix('zardy', 'text-box-zardy', 24, false);
-		box.animation.addByPrefix('unknow', 'text-box-unknow', 24, false);
+		box.animation.addByPrefix('idle', 'textbox-idle', 24, false);
+		box.animation.addByPrefix('cable', 'cable-textbox', 24, false);
+		box.animation.addByPrefix('jacky', 'jacky-textbox', 24, false);
+		box.animation.addByPrefix('zardy', 'zardy-textbox', 24, false);
+		box.animation.addByPrefix('unknow', 'unknow-textbox', 24, false);
 		box.animation.play('idle');
-		box.antialiasing = true;
+		box.antialiasing = SettingsPrefs.antialiasing;
 
 		whitebg = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		whitebg.alpha = 0;
 
 		house = new FlxSprite(0, 0).loadGraphic(Paths.stage('house'));
-		house.antialiasing = true;
+		house.antialiasing = SettingsPrefs.antialiasing;
 		house.alpha = 0;
 		toolshed = new FlxSprite(0, 0).loadGraphic(Paths.stage('toolshed'));
-		toolshed.antialiasing = true;
+		toolshed.antialiasing = SettingsPrefs.antialiasing;
 		toolshed.alpha = 0;
 		vines = new FlxSprite(0, 0).loadGraphic(Paths.stage('vines'));
-		vines.antialiasing = true;
+		vines.antialiasing = SettingsPrefs.antialiasing;
 		vines.alpha = 0;
 		maze = new FlxSprite(0, 0).loadGraphic(Paths.stage('mazeintro'));
-		maze.antialiasing = true;
+		maze.antialiasing = SettingsPrefs.antialiasing;
 		maze.alpha = 0;
 		zardy = new FlxSprite(0, 0).loadGraphic(Paths.stage('introzardy'));
-		zardy.antialiasing = true;
+		zardy.antialiasing = SettingsPrefs.antialiasing;
 		zardy.alpha = 0;
 
-		zardyicon = new FlxSprite(420, 11).loadGraphic(Paths.charecters('zardy-idle'));
-		zardyicon.antialiasing = true;
-		jackyicon = new FlxSprite(834, 17).loadGraphic(Paths.charecters('jacky-idle'));
-		jackyicon.antialiasing = true;
-		cablecrowicon = new FlxSprite(-106, 64).loadGraphic(Paths.charecters('cablecrow-idle'));
-		cablecrowicon.antialiasing = true;
+		zardyicon = new FlxSprite(764, 1091).loadGraphic(Paths.charecters('zardy-idle'));
+		zardyicon.antialiasing = SettingsPrefs.antialiasing;
+		jackyicon = new FlxSprite(1355, 1091).loadGraphic(Paths.charecters('jacky-idle'));
+		jackyicon.antialiasing = SettingsPrefs.antialiasing;
+		cablecrowicon = new FlxSprite(87, 1177).loadGraphic(Paths.charecters('cablecrow-idle'));
+		cablecrowicon.antialiasing = SettingsPrefs.antialiasing;
 
-		dropText = new FlxText(130, 509, 1000, "", 50);
+		FlxTween.tween(zardyicon, {x: 764, y: 151}, 0.7, {type: ONESHOT, ease: FlxEase.smoothStepInOut, startDelay: 0});
+		FlxTween.tween(jackyicon, {x: 1355, y: 151}, 0.9, {type: ONESHOT, ease: FlxEase.smoothStepInOut, startDelay: 0.1});
+		FlxTween.tween(cablecrowicon, {x: 87, y: 237}, 0.9, {type: ONESHOT, ease: FlxEase.smoothStepInOut, startDelay: 0.1});
+
+		dropText = new FlxText(251, 795, 1400, "", 55);
 		dropText.font = 'Riffic';
 		dropText.color = 0x7F7F7F;
 
-		swagDialogue = new FlxTypeText(128, 507, 1000, "", 50);
+		swagDialogue = new FlxTypeText(249, 792, 1400, "", 55);
 		swagDialogue.font = 'Riffic';
 
 		add(cablecrowicon);
@@ -176,6 +180,8 @@ class VideoTest extends FlxSpriteGroup
 	var iszoomedJ:Bool = false;
 	var iszoomedC:Bool = false;
 
+	public var playersname:String = 'Joe the horse';
+
 	function startDialogue():Void
 	{
 		cleanDialog();
@@ -233,7 +239,7 @@ class VideoTest extends FlxSpriteGroup
 	function idle()
 	{
 		box.animation.play('idle');
-		box.y = 479;
+		box.y = 767;
 		if (iszoomedZ)
 		{
 			FlxTween.tween(zardyicon.scale, {x: 1, y: 1}, 0.5);
@@ -254,7 +260,7 @@ class VideoTest extends FlxSpriteGroup
 	function zardyplayer()
 	{
 		box.animation.play('zardy');
-		box.y = 417;
+		box.y = 661;
 		FlxTween.tween(zardyicon.scale, {x: 1.05, y: 1.05}, 0.5);
 		iszoomedZ = true;
 
@@ -273,7 +279,7 @@ class VideoTest extends FlxSpriteGroup
 	function cable()
 	{
 		box.animation.play('cable');
-		box.y = 417;
+		box.y = 671;
 		FlxTween.tween(cablecrowicon.scale, {x: 1.05, y: 1.05}, 0.5);
 
 		iszoomedC = true;
@@ -293,7 +299,7 @@ class VideoTest extends FlxSpriteGroup
 	function jacky()
 	{
 		box.animation.play('jacky');
-		box.y = 416;
+		box.y = 661;
 		FlxTween.tween(jackyicon.scale, {x: 1.05, y: 1.05}, 0.5);
 
 		iszoomedJ = true;
@@ -313,7 +319,7 @@ class VideoTest extends FlxSpriteGroup
 	function unknow()
 	{
 		box.animation.play('unknow');
-		box.y = 417;
+		box.y = 672;
 		if (iszoomedZ)
 		{
 			FlxTween.tween(zardyicon.scale, {x: 1, y: 1}, 0.5);
@@ -336,15 +342,15 @@ class VideoTest extends FlxSpriteGroup
 	function jackyreturn()
 	{
 		FlxTween.tween(jackyicon, {alpha: 1}, 0.7, {startDelay: 1});
-		FlxTween.tween(cablecrowicon, {x: -106, y: 64}, 0.7, {type: ONESHOT, ease: FlxEase.smootherStepInOut});
-		FlxTween.tween(zardyicon, {x: 420, y: 11}, 0.7, {type: ONESHOT, ease: FlxEase.smootherStepInOut});
+		FlxTween.tween(cablecrowicon, {x: 87, y: 237}, 0.7, {type: ONESHOT, ease: FlxEase.smootherStepInOut});
+		FlxTween.tween(zardyicon, {x: 764, y: 151}, 0.7, {type: ONESHOT, ease: FlxEase.smootherStepInOut});
 	}
 
 	function jackyleave()
 	{
 		FlxTween.tween(jackyicon, {alpha: 0}, 0.7, {startDelay: 0});
-		FlxTween.tween(cablecrowicon, {x: 61, y: 64}, 0.7, {type: ONESHOT, ease: FlxEase.smootherStepInOut, startDelay: 1});
-		FlxTween.tween(zardyicon, {x: 600, y: 11}, 0.7, {type: ONESHOT, ease: FlxEase.smootherStepInOut, startDelay: 1});
+		FlxTween.tween(cablecrowicon, {x: 345, y: 237}, 0.7, {type: ONESHOT, ease: FlxEase.smootherStepInOut, startDelay: 1});
+		FlxTween.tween(zardyicon, {x: 1022, y: 151}, 0.7, {type: ONESHOT, ease: FlxEase.smootherStepInOut, startDelay: 1});
 	}
 
 	// scary intro stuff

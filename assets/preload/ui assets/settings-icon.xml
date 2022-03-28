@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="settings-icon.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="settings logo0000" x="3" y="190" width="662" height="162" frameX="-2" frameY="-11" frameWidth="666" frameHeight="184"/>
+	<SubTexture name="settings logo0001" x="3" y="190" width="662" height="162" frameX="-2" frameY="-11" frameWidth="666" frameHeight="184"/>
+	<SubTexture name="settings logo0002" x="3" y="190" width="662" height="162" frameX="-2" frameY="-11" frameWidth="666" frameHeight="184"/>
+	<SubTexture name="settings logo0003" x="3" y="190" width="662" height="162" frameX="-2" frameY="-11" frameWidth="666" frameHeight="184"/>
+	<SubTexture name="settings logo0004" x="3" y="190" width="662" height="162" frameX="-2" frameY="-11" frameWidth="666" frameHeight="184"/>
+	<SubTexture name="settings logo0005" x="3" y="190" width="662" height="162" frameX="-2" frameY="-11" frameWidth="666" frameHeight="184"/>
+	<SubTexture name="settings logo0006" x="3" y="190" width="662" height="162" frameX="-2" frameY="-11" frameWidth="666" frameHeight="184"/>
+	<SubTexture name="settings logo0007" x="3" y="190" width="662" height="162" frameX="-2" frameY="-11" frameWidth="666" frameHeight="184"/>
+	<SubTexture name="settings logo0008" x="3" y="190" width="662" height="162" frameX="-2" frameY="-11" frameWidth="666" frameHeight="184"/>
+	<SubTexture name="settings logo0009" x="3" y="190" width="662" height="162" frameX="-2" frameY="-11" frameWidth="666" frameHeight="184"/>
+	<SubTexture name="settings logo0010" x="3" y="3" width="666" height="184"/>
+	<SubTexture name="settings logo0011" x="3" y="3" width="666" height="184"/>
+	<SubTexture name="settings logo0012" x="3" y="3" width="666" height="184"/>
+	<SubTexture name="settings logo0013" x="3" y="3" width="666" height="184"/>
+	<SubTexture name="settings logo0014" x="3" y="3" width="666" height="184"/>
+	<SubTexture name="settings logo0015" x="3" y="3" width="666" height="184"/>
+	<SubTexture name="settings logo0016" x="3" y="3" width="666" height="184"/>
+	<SubTexture name="settings logo0017" x="3" y="3" width="666" height="184"/>
+	<SubTexture name="settings logo0018" x="3" y="3" width="666" height="184"/>
+	<SubTexture name="settings logo0019" x="3" y="3" width="666" height="184"/>
+</TextureAtlas>

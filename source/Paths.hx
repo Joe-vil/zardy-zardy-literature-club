@@ -110,6 +110,11 @@ class Paths
 		return getPath('images/$key.png', IMAGE, library);
 	}
 
+	inline static public function arealive(key:String, ?library:String)
+	{
+		return getPath('character.data/$key.txt', TEXT, library);
+	}
+
 	inline static public function charecters(key:String, ?library:String)
 	{
 		return getPath('characters/$key.png', IMAGE, library);

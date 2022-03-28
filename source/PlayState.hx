@@ -12,6 +12,9 @@ import flixel.text.FlxText;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
+#if windows
+import Discord.DiscordClient;
+#end
 
 class PlayState extends FlxState
 {
@@ -24,22 +27,32 @@ class PlayState extends FlxState
 	private var quickfix:Bool = true;
 	var entersound:FlxSound;
 
+	var maze:FlxSprite;
+
 	override public function create()
 	{
+		#if windows
+		DiscordClient.changePresence("Playing act: 1", null);
+		#end
+
 		FlxG.sound.playMusic(Paths.music('Dateintro'));
 		entersound = FlxG.sound.load(Paths.sound('enter'));
 
+		maze = new FlxSprite(0, 0).loadGraphic(Paths.stage('maze!'));
+		maze.antialiasing = SettingsPrefs.antialiasing;
+
 		// funny text fix
-		dropTextfix = new FlxText(130, 509, 1000, "This field. . . is full of incredibly cute scarecrows?!", 50);
+		dropTextfix = new FlxText(251, 795, 1400, "This field. . . is full of incredibly cute scarecrows?!", 55);
 		dropTextfix.font = 'Riffic';
 		dropTextfix.color = 0x7F7F7F;
 
-		swagDialoguefix = new FlxText(128, 507, 1000, "This field. . . is full of incredibly cute scarecrows?!", 50);
+		swagDialoguefix = new FlxText(249, 792, 1400, "This field. . . is full of incredibly cute scarecrows?!", 55);
 		swagDialoguefix.font = 'Riffic';
 
 		dialogue = CoolUtil.coolTextFile(Paths.txt('Dialogue-1'));
 		var doof:VideoTest = new VideoTest(false, dialogue);
 
+		add(maze);
 		add(doof);
 		add(dropTextfix);
 		add(swagDialoguefix);
@@ -69,7 +82,6 @@ class PlayState extends FlxState
 		{
 			if (FlxG.keys.justPressed.ENTER)
 			{
-				entersound.play();
 				remove(dropTextfix);
 				remove(swagDialoguefix);
 				quickfix = false;
@@ -86,10 +98,16 @@ class PlayState extends FlxState
 	override function openSubState(SubState:FlxSubState)
 	{
 		super.openSubState(SubState);
+		#if windows
+		DiscordClient.changePresence("Paused", null);
+		#end
 	}
 
 	override function closeSubState()
 	{
 		super.closeSubState();
+		#if windows
+		DiscordClient.changePresence("Playing act: 1", null);
+		#end
 	}
 }

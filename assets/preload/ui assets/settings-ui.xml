@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="settings-ui.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="anti0000" x="3" y="317" width="512" height="69"/>
+	<SubTexture name="back0000" x="518" y="308" width="195" height="68"/>
+	<SubTexture name="display0000" x="592" y="165" width="282" height="66"/>
+	<SubTexture name="master0000" x="3" y="165" width="586" height="69"/>
+	<SubTexture name="sel anti0000" x="3" y="86" width="616" height="76"/>
+	<SubTexture name="sel back0000" x="710" y="3" width="263" height="78"/>
+	<SubTexture name="sel display0000" x="622" y="86" width="349" height="76"/>
+	<SubTexture name="sel master0000" x="3" y="3" width="704" height="80"/>
+	<SubTexture name="sel text0000" x="3" y="237" width="507" height="77"/>
+	<SubTexture name="text0000" x="513" y="237" width="418" height="68"/>
+</TextureAtlas>

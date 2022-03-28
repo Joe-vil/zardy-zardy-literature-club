@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="saveFileIcons.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="1.png" x="457" y="3" width="451" height="219"/>
+	<SubTexture name="2.png" x="3" y="225" width="451" height="219"/>
+	<SubTexture name="3.png" x="3" y="3" width="451" height="219"/>
+	<SubTexture name="4.png" x="3" y="447" width="451" height="219"/>
+	<SubTexture name="5.png" x="457" y="225" width="451" height="219"/>
+	<SubTexture name="6.png" x="457" y="447" width="451" height="219"/>
+	<SubTexture name="no-save-file.png" x="3" y="669" width="451" height="219"/>
+</TextureAtlas>

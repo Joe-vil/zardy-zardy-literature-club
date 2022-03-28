@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="exit.png">
-	<!-- Created with Adobe Animate version 19.0.0.326 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Select.png" x="3" y="3" width="102" height="68"/>
-	<SubTexture name="exit.png" x="3" y="74" width="92" height="62"/>
-</TextureAtlas>

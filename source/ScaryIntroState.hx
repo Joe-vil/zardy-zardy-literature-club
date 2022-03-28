@@ -15,6 +15,9 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
+#if windows
+import Discord.DiscordClient;
+#end
 
 class ScaryIntroState extends FlxState
 {
@@ -32,17 +35,20 @@ class ScaryIntroState extends FlxState
 
 	override public function create()
 	{
-		FlxG.sound.playMusic(Paths.music('scary'));
-		FlxG.sound.music.fadeIn(2);
+		#if windows
+		DiscordClient.changePresence("The Awakening", null);
+		#end
+
+		FlxG.sound.playMusic(Paths.music('scary'), 0);
 
 		entersound = FlxG.sound.load(Paths.sound('enter'));
 
 		// funny text fix
-		dropTextfix = new FlxText(130, 509, 1000, "I feel my eyes slowly open.", 50);
+		dropTextfix = new FlxText(251, 795, 1400, "I feel my eyes slowly open.", 55);
 		dropTextfix.font = 'Riffic';
 		dropTextfix.color = 0x7F7F7F;
 
-		swagDialoguefix = new FlxText(128, 507, 1000, "I feel my eyes slowly open.", 50);
+		swagDialoguefix = new FlxText(249, 792, 1400, "I feel my eyes slowly open.", 55);
 		swagDialoguefix.font = 'Riffic';
 
 		dialogue = CoolUtil.coolTextFile(Paths.txt('IntroText'));
@@ -58,6 +64,8 @@ class ScaryIntroState extends FlxState
 		add(swagDialoguefix);
 
 		FlxG.camera.fade(FlxColor.WHITE, 3, true);
+
+		new FlxTimer().start(1, soundfix);
 
 		super.create();
 	}
@@ -82,7 +90,6 @@ class ScaryIntroState extends FlxState
 		{
 			if (FlxG.keys.justPressed.ENTER)
 			{
-				entersound.play();
 				remove(dropTextfix);
 				remove(swagDialoguefix);
 				quickfix = false;
@@ -101,13 +108,24 @@ class ScaryIntroState extends FlxState
 		}
 	}
 
+	function soundfix(timer:FlxTimer):Void
+	{
+		FlxG.sound.music.fadeIn(1);
+	}
+
 	override function openSubState(SubState:FlxSubState)
 	{
 		super.openSubState(SubState);
+		#if windows
+		DiscordClient.changePresence("Paused", null);
+		#end
 	}
 
 	override function closeSubState()
 	{
 		super.closeSubState();
+		#if windows
+		DiscordClient.changePresence("The Awakening", null);
+		#end
 	}
 }

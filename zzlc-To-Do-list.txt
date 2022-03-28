@@ -1,22 +1,28 @@
 Zardy Zardy Literature Club - v0.2.0.1
 
-Done = (^)
+Done = (✓)
+Not Done = (x)
 
 things that need to be fixed:
 
-finish pause menu
-fix main menu enter bug
-fix maze bg in main stage
-fix strang audio bug in the introduction
-fix the "who do you pick?" menu
+resize game to 1920x1080 (✓)
+finish pause menu (✓)
+fix main menu enter bug (✓)
+fix maze bg in main stage (✓)
+fix strang audio bug in the introduction (✓)
+fix the "who do you pick?" menu (x)
 
 things needed to be added and/or created:
 
-pause menu assets (text icons and sub menus)
-expressions for the charecters maybe???
-add a debug menu just to make life easer
-making a working save file junk (this is gonna be hell)
-make the introduction to the charecters more dramatic aka tween them
-add a version # in the main menu (kinda how fnf does it)
+pause menu assets (text icons and sub menus) (x)
+expressions for the charecters maybe??? (x)
+add a debug menu just to make life easer (x)
+making a working save file junk (this is gonna be hell) (x)
+have all the sub menus work in the main menu (x)
+load (x)
+settings (x)
+help  (x)
+make the introduction to the charecters more dramatic aka tween them (✓)
+add a version # in the main menu (kinda how fnf does it) (✓)
 
 

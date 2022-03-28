@@ -10,6 +10,9 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import openfl.system.System;
+#if windows
+import Discord.DiscordClient;
+#end
 
 class MainMenuGhost extends FlxState
 {
@@ -23,6 +26,10 @@ class MainMenuGhost extends FlxState
 
 	override public function create()
 	{
+		#if windows
+		DiscordClient.changePresence("Ę̶̨̠̤̼̙̹͖̼̜̋̃͆̃͑̅̂́͂͜N̸̘͓̐D̷̢̢͎̟̺̲͔͑͋̎̋͆̏̀", null);
+		#end
+
 		FlxG.sound.playMusic(Paths.music('DokiDoki-ghost'));
 
 		ERROR = FlxG.sound.load(Paths.sound('itsOver'));
