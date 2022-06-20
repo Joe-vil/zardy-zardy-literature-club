@@ -45,6 +45,8 @@ class MainMenu extends FlxState
 	var helpbutton:FlxSprite;
 	var exit:FlxSprite;
 
+	var maybe:FlxSprite;
+
 	var introActive:Bool = true;
 	var updates:Bool = true;
 
@@ -53,6 +55,9 @@ class MainMenu extends FlxState
 	var zardypopup:FlxTween;
 	var joelmao:FlxTween;
 	var scrolldots:FlxTween;
+
+	var swagDialoguefix:FlxText;
+	var dropTextfix:FlxText;
 
 	override public function create()
 	{
@@ -70,25 +75,34 @@ class MainMenu extends FlxState
 		if (updates)
 		{
 			trace('checking for update');
-			var http = new haxe.Http("https://raw.githubusercontent.com/ShadowMario/FNF-PsychEngine/main/gitVersion.txt");
+			var http = new haxe.Http("https://github.com/ninjamuffin99/Funkin/blob/master/assets/preload/images/logo.png");
 
 			http.onData = function(data:String)
 			{
-				updateVersion = data.split('\n')[0].trim();
-				var curVersion:String = MainMenuState.psychEngineVersion.trim();
-				trace('version online: ' + updateVersion + ', your version: ' + curVersion);
-				if (updateVersion != curVersion)
-				{
-					trace('versions arent matching!');
-					mustUpdate = true;
-				}
+				logo = new FlxSprite(0, 0).loadGraphic(Paths.imageui(http.onData));
+				logo.antialiasing = SettingsPrefs.antialiasing;
+				logo.x = 226.35;
+				logo.y = -448.5;
+
+				// dropTextfix = new FlxText(251, 795, 1400, data, 55);
+				// dropTextfix.font = 'Riffic';
+				// dropTextfix.color = 0x7F7F7F;
+
+				// swagDialoguefix = new FlxText(249, 792, 1400, data, 55);
+				// swagDialoguefix.font = 'Riffic';
 			}
 
 			http.onError = function(error)
 			{
 				trace('error: $error');
-			}
 
+				dropTextfix = new FlxText(251, 795, 1400, 'Disconnected From The Internet!', 55);
+				dropTextfix.font = 'Riffic';
+				dropTextfix.color = 0x7F7F7F;
+
+				swagDialoguefix = new FlxText(249, 792, 1400, 'Disconnected From The Internet!', 55);
+				swagDialoguefix.font = 'Riffic';
+			}
 			http.request();
 		}
 
@@ -192,6 +206,9 @@ class MainMenu extends FlxState
 
 		add(zARDY);
 		add(creds);
+
+		add(dropTextfix);
+		add(swagDialoguefix);
 
 		tweenIn();
 
